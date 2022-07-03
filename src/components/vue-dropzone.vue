@@ -89,7 +89,8 @@ export default {
     this.hasBeenMounted = true;
 
     this.dropzone = new Dropzone(
-      this.$refs.dropzoneElement,
+      //this.$refs.dropzoneElement,
+      document.body,
       this.dropzoneSettings
     );
     let vm = this;
